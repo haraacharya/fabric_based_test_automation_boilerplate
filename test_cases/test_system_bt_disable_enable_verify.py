@@ -2,6 +2,7 @@ from framework_lib import *
 
 #test_case: system bt enable disable verify
 #use this to explore other commands under bluetoothctl commandline interface and in fact we can
+@device_check
 def system_bt_enable_disable_verify():
     test_name = "system_bt_enable_disable_verify"
     return_message = ""

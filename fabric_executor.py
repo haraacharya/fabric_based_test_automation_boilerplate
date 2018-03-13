@@ -12,8 +12,9 @@ env.hosts = ['192.168.1.30']
 env.user   = "root"
 # Set the password [NOT RECOMMENDED]
 env.password = "test0000"
-
-result_csv_file_name = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M') +"_result.csv"
+misc_test_folder_location = os.getcwd() + "/misc"
+print "misc_test_folder_location is: ", misc_test_folder_location
+result_csv_file_name = os.getcwd() + "/" + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M') +"_result.csv"
 #creating result csv file
 with open(result_csv_file_name, 'w') as csvfile:
     fieldnames = ['Test_Name', 'Test_Result', 'Comments or Errors']
